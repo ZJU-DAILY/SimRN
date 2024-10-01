@@ -1,0 +1,59 @@
+dataset: Geolife
+distance_type: dtw
+cuda: 0
+
+traj_file: ./data/tdrive/st_traj/matching_result.csv
+time_file: ./data/tdrive/st_traj/time_drop_list.csv
+
+shuffle_node_file: ./data/tdrive/st_traj/shuffle_node_list.npy
+shuffle_time_file: ./data/tdrive/st_traj/shuffle_time_list.npy
+shuffle_d2vec_file: ./data/tdrive/st_traj/shuffle_d2vec_list.npy
+shuffle_coor_file: ./data/tdrive/st_traj/shuffle_coor_list.npy
+shuffle_kseg_file: ./data/tdrive/st_traj/shuffle_kseg_list.npy
+kseg: 5
+
+#path_node_triplets: ./data/tdrive/triplet/TP/node_triplets_2w_STBall
+#path_time_triplets: ./data/tdrive/triplet/TP/time_triplets_2w_STBall
+#path_d2vec_triplets: ./data/tdrive/triplet/TP/d2vec_triplets_2w_STBall
+
+
+path_node_triplets: ./data/tdrive/triplet/P3/node_triplets
+path_time_triplets: ./data/tdrive/triplet/P3/time_triplets
+path_d2vec_triplets: ./data/tdrive/triplet/P3/d2vec_triplets
+
+#path_triplets_truth: ./ground_truth/tdrive/TP/train_triplet_2w_STBall.npy
+path_triplets_truth: ./ground_truth/tdrive/TP/train_triplet_2w_STBall_2.npy
+
+path_vali_truth: ./ground_truth/tdrive/TP/vali_st_distance.npy
+path_test_truth: ./ground_truth/tdrive/TP/test_st_distance.npy
+
+pointnum:  # The number of nodes in the network
+  tdrive: 75000
+  hangzhou: 50000
+  chengdu: 5000
+  roma: 35000
+  xian: 3000
+
+feature_size: 128   # node2vec feature size
+# origin:128 change to 256
+embedding_size: 128 # GCN embedding size
+
+date2vec_size: 64 # date2vec output size
+hidden_size: 128  # LSTM hidden size
+num_layers: 1    # Spatial LSTM layer
+dropout_rate: 0
+learning_rate: 0.001
+concat: False  # whether concat or pairwise add of two embeddings
+epochs: 150
+train_batch: 128
+test_batch: 500
+early_stop: 30
+period: 4
+
+node2vec:
+  walk_length: 20
+  context_size: 10
+  walks_per_node: 10
+  num_neg_samples: 1
+  p: 1
+  q: 1

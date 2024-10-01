@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: traj-dist
+Version: 1.1
+Summary: Distance to compare 2D-trajectories in Python/Cython
+Home-page: https://github.com/bguillouet/traj-dist
+Author: Brendan Guillouet
+Author-email: brendan.guillouet@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: trajectory,distance,haversine
+Platform: UNKNOWN
