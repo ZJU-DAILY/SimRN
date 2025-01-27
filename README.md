@@ -12,10 +12,10 @@ Please refer to the source code to install all required packages in Python.
 
 ## Datasets
 We use four real-life datasets: T-Drive, Porto, Rome, SF, which can be downloaded from the URLs below.
-T-Drive: https://www.microsoft.com/en-us/research/publication/t-drive-trajectory-data-sample/
-Porto: https://archive.ics.uci.edu/dataset/339/
-Rome: https://ieee-dataport.org/open-access/crawdad-romataxi
-SF: https://ieee-dataport.org/open-access/crawdad-epflmobility
+* T-Drive: https://www.microsoft.com/en-us/research/publication/t-drive-trajectory-data-sample/
+* Porto: https://archive.ics.uci.edu/dataset/339/
+* Rome: https://ieee-dataport.org/open-access/crawdad-romataxi
+* SF: https://ieee-dataport.org/open-access/crawdad-epflmobility
 
 ## To Run Experimental Case
 
