@@ -11,7 +11,11 @@ SimRN: An effective and efficient trajectory similarity learning framework for r
 Please refer to the source code to install all required packages in Python.
 
 ## Datasets
-We use two real-life datasets: T-Drive and Porto, which can be downloaded from the URLs (https://www.microsoft.com/en-us/research/publication/t-drive-trajectory-data-sample/) and (https://archive.ics.uci.edu/dataset/339/). 
+We use four real-life datasets: T-Drive, Porto, Rome, SF, which can be downloaded from the URLs below.
+T-Drive: https://www.microsoft.com/en-us/research/publication/t-drive-trajectory-data-sample/
+Porto: https://archive.ics.uci.edu/dataset/339/
+Rome: https://ieee-dataport.org/open-access/crawdad-romataxi
+SF: https://ieee-dataport.org/open-access/crawdad-epflmobility
 
 ## To Run Experimental Case
 
@@ -27,4 +31,4 @@ We use two real-life datasets: T-Drive and Porto, which can be downloaded from t
 
 1. run "state_main.py" to start the agent "TrajRL" to make decisons, containing action selecting, sample generations, model training, and similarity computation.
 
-Note that, (i) the ground truth of six non-learning-based methods on two datasets occupies too much memory, as these matrices are not stored in this repository; (ii) the datasets are stored in ".env/Env/data".
+Note that, (i) the ground truth of six non-learning-based methods on four datasets occupies too much memory, as these matrices are not stored in this repository; (ii) the datasets are stored in ".env/Env/data".
